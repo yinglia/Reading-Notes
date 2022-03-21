@@ -13,6 +13,8 @@ Two type of subquery:
 
 Defination: it may be executed alone and does not reference anything from the containing statement
 
+### multiple-row, signle-column
+
 WHERE customer_id <> ALL
 
  -> (SELECT customer_id
