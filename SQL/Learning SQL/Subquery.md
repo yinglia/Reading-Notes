@@ -35,16 +35,25 @@ ensure that the set of values does not contain a null value
 ### multicolumnn
 
 -without subquery
- -> WHERE fa.actor_id IN
- -> (SELECT actor_id FROM actor WHERE last_name = 'MONROE')
- -> AND fa.film_id IN
- -> (SELECT film_id FROM film WHERE rating = 'PG')
+ > WHERE fa.actor_id IN
+ 
+ > (SELECT actor_id FROM actor WHERE last_name = 'MONROE')
+ 
+ > AND fa.film_id IN
+ 
+ > (SELECT film_id FROM film WHERE rating = 'PG')
  
  -with subquery
+ 
  > WHERE (actor_id, film_id) IN
- -> (SELECT a.actor_id, f.film_id
- -> FROM actor a
- -> CROSS JOIN film f
- -> WHERE a.last_name = 'MONROE'
- -> AND f.rating = 'PG');
+ 
+ > (SELECT a.actor_id, f.film_id
+ 
+ > FROM actor a
+ 
+ > CROSS JOIN film f
+ 
+ > WHERE a.last_name = 'MONROE'
+ 
+ > AND f.rating = 'PG');
  
