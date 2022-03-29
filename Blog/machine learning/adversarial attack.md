@@ -1,4 +1,8 @@
+https://towardsdatascience.com/know-your-enemy-the-fascinating-implications-of-adversarial-examples-5936bccb24af
+
 https://www.toptal.com/machine-learning/adversarial-machine-learning-tutorial
+
+https://www.kdnuggets.com/2019/06/machine-learning-adversarial-attacks.html
 
 Nowadays, as machine learning models are deployed in real-world scenarios, security vulnerabilities coming from model errors have become a real concern.
 
@@ -39,3 +43,14 @@ Obviously, the less information the model outputs at prediction time, the harder
 
 When confidence scores are provided to the end user, a malicious attacker can use them to numerically estimate the gradient of the loss function. This way, attackers can craft white-box attacks using, for example, fast gradient sign method. In the Computer Vision Foundation paper we quoted earlier, the authors show how to do this against a commercial machine learning model.
 
+# Part 2
+
+https://towardsdatascience.com/know-your-enemy-the-fascinating-implications-of-adversarial-examples-5936bccb24af
+
+## Why are neural networks vulnerable to these attacks?
+
+Even though this is possibly the most interesting question surrounding adversarial examples I can’t give you a satisfying answer — this is a completely open question! Many proposals have been put forward including
+Neural networks are too linear in regions of the input space (ref)
+Dependence of prediction on weakly correlating features (ref)
+Large singular values of internal weight matrices (ref)
+Adversarial examples are a perhaps unavoidable property of high dimensional input spaces (ref)
