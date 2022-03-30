@@ -1,3 +1,7 @@
+Wiki  https://en.wikipedia.org/wiki/Adversarial_machine_learning
+
+Other sources: 
+
 https://towardsdatascience.com/know-your-enemy-the-fascinating-implications-of-adversarial-examples-5936bccb24af
 
 https://www.toptal.com/machine-learning/adversarial-machine-learning-tutorial
