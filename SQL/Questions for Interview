@@ -94,3 +94,22 @@ The Cartesian Product is a multiplication operation in the set theory that gener
 
 AxB ={(a,1), (a,2), (a,3), (b,1), (b,2), (b,3)}
 
+
+Code 1
+
+SELECT ColumnName_1, 
+       ColumnName_2, 
+       ColumnName_N
+FROM [Table_1]
+     CROSS JOIN [Table_2]
+     
+Code 2
+
+SELECT ColumnName_1, 
+       ColumnName_2, 
+       ColumnName_N
+FROM [Table_1],[Table_2]
+
+Notes: Unlike the INNER JOIN, LEFT JOIN and FULL OUTER JOIN, the CROSS JOIN does not require a joining condition.
+
+When CROSS JOIN is used for tables that have a high number of rows, it might affect the performance negatively.
