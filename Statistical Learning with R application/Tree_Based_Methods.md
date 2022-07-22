@@ -44,7 +44,22 @@ classification: classification error rate (the fraction of the training observat
 - Gini index: a measure of node purity – a small
 value indicates that a node contains predominantly observations from a single class. an alternative is cross-entropy
 
-In overall, trees are easy to expalin; generally do not have same level of predictive accuracy as some of the other approaches.
+In overall, trees are easy to expalin; generally poor predictive performance (predictive accuracy) as some of the other approaches.
+
+## How to improve the predictive performance of trees
+
+### Bagging (Bootstrap aggregation)
+taking repeated samples from the (single) training
+data set
+
+generate B bootstrapped training set, recording the value / classpredicted by each of the B trees. regression -> average, classfication -> majority vote
+
+Out-of-Bag Error:
+
+leaving out observations that are sampled in the bootstrapped training dataset (out-of-bag) and can be used as test data.
+
+On average, each bagged tree makes use of around two-thirds of the
+observations.
 
 # Question
 
